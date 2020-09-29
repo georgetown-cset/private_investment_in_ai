@@ -28,12 +28,12 @@ source venv/bin/activate
 
 The script will do the following:
 
-a. Runs SQL queries to create tables in BQ.
-b. Transfers these tables to the GCP storage.
-c. Downloads tables to hard drive in the `Data` folder.
-d. Cleans the data
-e. Makes tables for the report 
-f. Runs additional tests, which provided information used in the report
-g. Uploads the resulting tables to the GCP Storage.
+a. Runs SQL queries to create tables in BQ <br>
+b. Transfers these tables to the GCP storage<br>
+c. Downloads tables to hard drive in the `Data` folder<br>
+d. Cleans the data<br>
+e. Makes tables for the report <br>
+f. Runs additional tests, which provided information used in the report<br>
+g. Uploads the resulting tables to the GCP Storage.<br>
 
 
