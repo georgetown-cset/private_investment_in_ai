@@ -1,5 +1,6 @@
 
-# This scripts calculates private investment in AI statistics for CSET report XXX
+# This scripts calculates private investment in AI statistics for CSET report
+# "Tracking AI Investment: Initial Findings From the Private Markets" published in September 2020
 # This script replicates tables used in the report
 # The identifies of the firms are masked and all data is available lin the Github. No access for CSET data holdings is
 # required.

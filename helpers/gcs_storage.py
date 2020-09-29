@@ -11,12 +11,14 @@ import os
 scopes=[ 'https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive',
         'https://www.googleapis.com/auth/bigquery', 'https://www.googleapis.com/auth/cloud-platform']
 
-if os.path.exists("/Users/ir177/Documents/ID/GCP-CSET Projects-49aa9c25f835 all admin.json"):
-    credentials = Credentials.from_service_account_file("/Users/ir177/Documents/ID/GCP-CSET Projects-49aa9c25f835 all admin.json")
-    credentials = credentials.with_scopes(scopes)
-    client = bigquery.Client(credentials=credentials)
-else:
-    print("Update authentication method in gcs_storage.py")
+#authenticate you GCP account here as credentials.json"
+
+#if os.path.exists(credentials.json):
+#    credentials = Credentials.from_service_account_file(credentials.json)
+#    credentials = credentials.with_scopes(scopes)
+#    client = bigquery.Client(credentials=credentials)
+#else:
+#    print("Update authentication method in gcs_storage.py")
 
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""

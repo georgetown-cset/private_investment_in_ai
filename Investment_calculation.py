@@ -1,4 +1,5 @@
-# This scripts calculates private investment in AI statistics for CSET report XXX
+# This scripts calculates private investment in AI statistics for CSET report
+# "Tracking AI Investment: Initial Findings From the Private Markets" published in September 2020
 # If requires access to the Google Cloud in CSET where the data is stored
 # Outside views should use it to understand how the data was transformed in the report, but it's imposible to
 # replicate without access to GCP.
