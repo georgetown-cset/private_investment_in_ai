@@ -1,7 +1,7 @@
 # Private Investment in AI
-This repository contains a supporting code for CSET's report Private Investmnet in AI. The code queries business investment data from Crunchbased and Refinitiv to identify private AI companies and calculate the investment flows into these companies.  
+This repository contains a supporting code for CSET's report Private Investmnet in AI. The code queries business investment data from Crunchbase and Refinitiv databases to identify private AI companies and calculate the investment flows into these companies.  
 
-The script `investment_calculation.py`runs the whole calculation from the raw data stored in the CSET's Google Cloud BigQuery tables. This code can be viewed to see the steps and methods for data analysis, but it cannot be used for replication because it relies on the proprietary data with restricted access. The script  `investment_calculation_replication.py` replicates the data tables using the table  `\data\masked_inv.csv` of masked investment deals included in this repositary.
+The script `investment_calculation.py`runs the whole calculation from the raw data stored in the CSET's Google Cloud BigQuery tables. This code can be viewed to see the steps and methods for data analysis, but it cannot be replicated outside CSET because it relies on the proprietary data with restricted access. The script `investment_calculation_replication.py` replicates the data tables using the table of masked investment deals `\data\masked_inv.csv` included in this repositary.
 
 
 # To Replicate Results in the Report:
@@ -29,7 +29,7 @@ source venv/bin/activate
 The script will do the following:
 
 a. Runs SQL queries to create tables in BQ.
-b. Transferts these tables to the GCP storage.
+b. Transfers these tables to the GCP storage.
 c. Downloads tables to hard drive in the `Data` folder.
 d. Cleans the data
 e. Makes tables for the report 
