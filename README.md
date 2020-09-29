@@ -4,7 +4,7 @@ This repository contains a supporting code for CSET's report Private Investmnet 
 The script `investment_calculation.py`runs the whole calculation from the raw data stored in the CSET's Google Cloud BigQuery tables. This code can be viewed to see the steps and methods for data analysis, but it cannot be replicated outside CSET because it relies on the proprietary data with restricted access. The script `investment_calculation_replication.py` replicates the data tables using the table of masked investment deals `\data\masked_inv.csv` included in this repositary.
 
 
-# To Replicate Results in the Report:
+# Replication of the Report:
 
 1.) Make a new virtualenv:
 `
