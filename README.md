@@ -17,15 +17,13 @@ source venv/bin/activate
 
 `pip install -r requirements.txt`
 
-3.) Run the script:
-`python investment_calculation_replication.py`
+3.) Run the script: `python investment_calculation_replication.py`
 
-# Description of Steps in the CSET Internal Calculation:
+# Description of Steps for the CSET Internal Calculation:
 
-4.) export GOOGLE_APPLICATION_CREDENTIALS=<path to your credentials> - a service account json. You should have at least BQ reader permissions. Make sure this file is included as an enviromental variable.
+4.) Update the GOOGLE_APPLICATION_CREDENTIALS environment variable: `export GOOGLE_APPLICATION_CREDENTIALS=<path to your service account json>` You should have at least BQ reader permissions.
  
-5.) Run main script:
-`python investment_calculation.py --update_analysis_data`
+5.) Run main script: `python investment_calculation.py --update_analysis_data`
 
 The script will do the following:
 
