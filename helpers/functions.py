@@ -1,5 +1,4 @@
 # clean data and load data
-import os
 import pandas as pd
 from .gcs_storage import list_blobs, delete_blob, download_blob, upload_blob, BQ_to_bucket
 import textwrap
@@ -55,22 +54,6 @@ def table_func(main_tab_list, inv):
             factors.append('security')
         dict[n] = agg_inv(func, inv, factors, ['year'], stat)
     return dict
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # test for the same export tables that are likely errors
 def dict_test(dic):
@@ -344,7 +327,6 @@ def impute_med(net, cb_vc, cb_ma):
 
 def impute_missing_values(cb_vc, cb_ma):
     '''
-    Is this the code corresponding to "To produce the estimated figures in Section 3, we used a multistage estimation process..." ?
     :param cb_vc: list of VC transactions of Crunchbase
     :param cb_ma: list of MA transactions for Crunchbase
     :return: cb_vc and cb_ma with imputed missing values
