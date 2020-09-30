@@ -1,5 +1,5 @@
-# Private Investment in AI
-This repository contains supporting code for CSET's report [Private Investment in AI](https://cset.georgetown.edu/research/tracking-ai-investment/). The code queries business investment data from Crunchbase and Refinitiv databases to identify private AI companies and calculate the investment flows into these companies.  
+# Tracking AI Investment
+This repository contains supporting code for CSET's report [Tracking AI Investment](https://cset.georgetown.edu/research/tracking-ai-investment/). The code queries business investment data from Crunchbase and Refinitiv databases to identify private AI companies and calculate the investment flows into these companies.  
 
 The script `investment_calculation.py` runs the whole calculation from the raw data stored in the CSET's Google Cloud BigQuery tables. This code can be viewed to see the steps and methods for data analysis, but it cannot be replicated outside CSET because it relies on the proprietary data with restricted access. The script `investment_calculation_replication.py` can be used for replication using the table of masked investment deals `data/masked_inv.csv` included in this repository.
 
